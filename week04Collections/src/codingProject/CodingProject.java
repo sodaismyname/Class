@@ -3,9 +3,8 @@ package codingProject;
 import java.util.Random;
 
 public class CodingProject {
-	public static  int[] subtractlastbyfirst(int[] a) { 
+	public static  void subtractlastbyfirst(int[] a) { 
 	System.out.println(a[a.length - 1] - a[0]); // Step 1a.
-	return a;
 	 }
 	
 	public static String stringTogetherWordNTimes(String word, int n) { // step 7.
@@ -58,7 +57,7 @@ public class CodingProject {
 		}
 	}
 	public static  boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) { // step 12
-		if(isHotOutside || moneyInPocket > 10.50) {
+		if(isHotOutside && moneyInPocket > 10.50) {
 			return true;
 		}else {
 			return false;
@@ -83,13 +82,13 @@ public static void main(String[] args) {
 	}
 	ageAverage = ageAverage / ages.length;
 	System.out.println("The average age in age is: " + ageAverage); // step 1c pt2.
+	
 	double lengthOfNames = 0;
 	String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob" }; // step 2.
-	System.out.println("the number of names in names is: " + names.length);
 	for(int i = 0; i < names.length; i++){ // step 2a.
 		lengthOfNames += names[i].length();
 	}
-	System.out.println("the total length of names in names is: " + lengthOfNames); 
+	
 	double averageLengthOfNames = lengthOfNames / names.length;
 	System.out.println("the average length of names in names is: " + averageLengthOfNames); // Step 2a pt2.
 	
